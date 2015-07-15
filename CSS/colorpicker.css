@@ -1,0 +1,32 @@
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.result {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.topcontainer{
+
+}
+.blue{
+    background-color: deepskyblue;
+}
+.yellow{
+    background-color: palegoldenrod;
+}
+.red{
+    background-color: crimson;
+}
+.green{
+    background-color: lightgreen;
+}
+.orange{
+    background-color: coral;
+}
+body{
+   background-color: red;
+}
