@@ -5,18 +5,65 @@
     <title>Color Picker</title>
     <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src = "/JS/colorpicker.js"></script>
-    <link rel="stylesheet" type="text/css" href="/CSS/colorpicker.css">
+    <style>
+        .circle {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .result {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .topcontainer{
+
+    }
+    .blue{
+        background-color: deepskyblue;
+    }
+    .yellow{
+        background-color: palegoldenrod;
+    }
+    .red{
+        background-color: crimson;
+    }
+    .green{
+        background-color: lightgreen;
+    }
+    .orange{
+        background-color: coral;
+    }
+    body{
+        background-color: azure;
+    }</style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".circle").click(function(){
+                if(!$(this).hasClass("green")) {
+                    var color = $(this).css("background-color");
+                    $(".result").css("background-color", color);
+                    console.log(color);
+                } else{
+                    $(".result").css("background-color", "black");
+                    $("#message").append("<p>Green is not a creative color!</p>");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
+    <h2>Select a Color</h2>
     <div class="topcontainer">
-        <div class="circle blue">
-            <p>Test Content</p>
-        </div>
+        <div class="circle blue"></div>
         <div class="circle yellow"></div>
         <div class="circle red"></div>
         <div class="circle green"></div>
         <div class="circle orange"></div>
     </div>
     <div class="result"></div>
+    <div id="message"></div>
 </body>
 </html>

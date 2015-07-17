@@ -8,6 +8,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    background-color: black;
 }
 .topcontainer{
 
@@ -28,5 +29,5 @@
     background-color: coral;
 }
 body{
-   background-color: red;
+   background-color: azure;
 }
